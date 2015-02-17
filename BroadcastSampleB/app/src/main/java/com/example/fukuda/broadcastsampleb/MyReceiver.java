@@ -17,7 +17,7 @@ public class MyReceiver extends BroadcastReceiver {
         Intent activity = new Intent();
         activity.setClass(context, MainActivity.class);
         activity.setFlags(Intent.FLAG_ACTIVITY_NEW_TASK);
-        Log.d("hoge", "onReceive: " + intent.getStringExtra("edittext"));
+        activity.putExtra("textview", intent.getStringExtra("edittext"));
 
         context.startActivity(activity);
     }

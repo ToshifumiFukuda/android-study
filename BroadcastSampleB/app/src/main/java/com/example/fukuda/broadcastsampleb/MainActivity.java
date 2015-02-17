@@ -20,28 +20,31 @@ public class MainActivity extends ActionBarActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
-        /*
-        Log.d("hoge", "onCreate: " + getIntent().getStringExtra("edittext"));
-        ((TextView)findViewById(R.id.textview)).setText(getIntent().getStringExtra("edittext"));
-        */
 
-        {
+        ((TextView)findViewById(R.id.textview)).setText(getIntent().getStringExtra("textview"));
+
+
+        /*{
             // register broadcast receiver
             mReceiver = new MyReceiver();
             filter = new IntentFilter();
             filter.addAction("com.example.fukuda.broadcastsamplea.broadcastsample.BROADCAST_EVENT");
-        }
+        }*/
     }
 
     @Override
     protected void onStart() {
         super.onStart();
+        /*
         registerReceiver(mReceiver, filter);
+        */
     }
 
     @Override
     protected void onStop() {
+        /*
         unregisterReceiver(mReceiver);
+        */
         super.onStop();
     }
 

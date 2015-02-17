@@ -21,12 +21,10 @@
             android:name=".MyReceiver"
             android:enabled="true"
             android:exported="true" >
-            <!--
             <intent-filter>
                     <action android:name="com.example.fukuda.broadcastsamplea.broadcastsample.BROADCAST_EVENT" />
                     <category android:name="android.intent.category.DEFAULT" />
             </intent-filter>
-            -->
         </receiver>
     </application>
 
